@@ -1,0 +1,9 @@
+services:
+    db:
+        image: postgres:11-alpine
+        environment:
+            POSTGRES_PASSWORD: santander
+            POSTGRES_USER: santander
+            POSTGRES_DB: santander
+        ports:
+           - "5432:5432"
